@@ -12,7 +12,11 @@ books = [
     {"title" : "The 7 Habits of Highly Effective People", "author": "Stephen Covey"}
 ]
 
+<<<<<<< HEAD
 app.route('/books')
+=======
+@app.route('/')
+>>>>>>> main
 def books_list():
     return render_template('books.html', books=books)
 
