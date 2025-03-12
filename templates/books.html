@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <title>Favorite Books</title>
     <style>
-        /* Setting background like soft colors */
+        /* Setting background to soft color */
         body {
             background-color: #e6f2ff;  /* light blue color */
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
-        /* Dark header color */
+        /* Dark header */
         header {
             background-color: #00509e; /* Dark blue */
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-        /* Main boxes centered lines  */
+        /* Main boxes to make it centered in between lines  */
         .container {
             max-width: 800px;
             margin: 30px auto;
@@ -34,10 +34,10 @@
             padding: 15px;
             border-radius: 5px;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-            border-left: 5px solid #00509e;  /* colored stripe on the left */
+            border-left: 5px solid #00509e;     /* colored stripe on the left of the books list */
         }
         li strong {
-            color: #00509e; /* Matches the header and border */
+            color: #00509e;     /* Matches the header and border */
         }
     </style>
 </head>
@@ -48,7 +48,7 @@
     <div class="container">
         <ul>
             {% for book in books %}
-                <li><strong>{{ book.title }}</strong> by {{ book.author }}</li>
+                <li><strong>{{ book.title }}</strong> by {{ book.author }} </li>
             {% endfor %}
         </ul>
     </div>
