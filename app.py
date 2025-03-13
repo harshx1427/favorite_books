@@ -11,8 +11,8 @@ books = [
     {"title" : "The Greater Good", "author": " Madeleine Shaw"},
     {"title" : "The 7 Habits of Highly Effective People", "author": "Stephen Covey"}
 ]
-
-app.route('/books')
+@app.route('/')
+@app.route('/books')
 def books_list():
     return render_template('books.html', books=books)
 
