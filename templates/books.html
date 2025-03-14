@@ -4,44 +4,46 @@
     <meta charset="UTF-8">
     <title>Favorite Books</title>
     <style>
-        /* Setting background like soft colors */
-        body {
-            background-color: #e6f2ff;  /* light blue color */
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        body {                          /* white backgroun withv standard text */
+            background-color: #fff;
+            font-family: sans-serif;
             margin: 0;
             padding: 0;
+            color: #333;
         }
-        /* Dark header color */
+        /* dark background with white text, centered */
         header {
-            background-color: #00509e; /* Dark blue */
+            background-color: #333;
             color: #fff;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
-        /* Main boxes centered lines  */
+        /* main content: centers content and add */
         .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 10px;
+            margin: 20px auto;
+            max-width: 650px;
+            padding: 20px;
         }
+        /* Remove bullet points  */
         ul {
             list-style: none;
             padding: 0;
         }
-        li {    /* backgroun white */
-            background-color: #fff;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-            border-left: 5px solid #00509e;  /* colored stripe on the left */
+        /* margin, padding, border, and rounded corners */
+        li {
+            margin: 8px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
         }
+        /* bold titile text */
         li strong {
-            color: #00509e; /* Matches the header and border */
+            color: #333;
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>My Favorite Books</h1>
     </header>
@@ -54,5 +56,3 @@
     </div>
 </body>
 </html>
-
-
